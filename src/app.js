@@ -4,19 +4,25 @@ import { Provider } from "react-redux";
 import AppRouter from "./routers/AppRouter.js";
 import configureStore from "./store/configureStore";
 import { addExpense, removeExpense, editExpense } from "./actions/expenses";
-import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } from "./actions/filters";
+import {
+  setTextFilter,
+  sortByDate,
+  sortByAmount,
+  setStartDate,
+  setEndDate
+} from "./actions/filters";
 import getVisibleExpenses from "./selectors/expenses";
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 import "react-dates/lib/css/_datepicker.css";
 
-
 const store = configureStore();
+console.log("test");
 
-   const jsx = (<Provider store={store}>
-        <AppRouter />
-    </Provider>
-   )
+const jsx = (
+  <Provider store={store}>
+    <AppRouter />
+  </Provider>
+);
 
-ReactDOM.render(jsx, document.getElementById('app'));
-
+ReactDOM.render(jsx, document.getElementById("app"));
