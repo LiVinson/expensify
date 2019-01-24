@@ -5,7 +5,6 @@
   "author": "Lisa Vinson",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
@@ -24,13 +23,8 @@
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^2.0.1",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
-    "enzyme-to-json": "^3.3.5",
     "express": "^4.16.4",
     "extract-text-webpack-plugin": "^3.0.2",
-    "jest": "^23.6.0",
-    "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.5.0",
     "moment": "^2.23.0",
     "node-sass": "^4.11.0",
@@ -42,16 +36,20 @@
     "react-modal": "^3.7.1",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
-    "react-test-renderer": "^16.7.0",
     "redux": "^4.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uuid": "^3.3.2",
     "validator": "^10.9.0",
-    "webpack": "^4.27.1",
-    "webpack-dev-server": "^3.1.10"
+    "webpack": "^4.27.1"
   },
   "devDependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.7.0",
+    "webpack-dev-server": "^3.1.10",
     "webpack-cli": "^3.1.2"
   }
 }
